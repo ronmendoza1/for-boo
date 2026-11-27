@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, serif;
+    background: linear-gradient(160deg, #ffe3ec, #ffb3c6);
+    color: #b5174a;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 640px;
+}
+
+.heart {
+    font-size: 3.5rem;
+    animation: beat 1.5s ease-in-out infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0 0.3rem;
+}
+
+.since {
+    font-style: italic;
+    color: #9b7b86;
+    margin: 0 0 1.8rem;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 4px 12px rgba(224, 36, 94, 0.15);
+}
+
+.box span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+
+.box small {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    color: #9b7b86;
+}
+
+.closing {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (min-width: 640px) {
+    .timer { grid-template-columns: repeat(6, 1fr); }
+    .box span { font-size: 1.9rem; }
+}
