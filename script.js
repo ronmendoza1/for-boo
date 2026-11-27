@@ -1,5 +1,5 @@
 
-const START = new Date(2020, 7, 27, 0, 0, 0);
+const START = new Date(2020, 6, 27, 0, 0, 0);
 
 const MS_SECOND = 1000;
 const MS_MINUTE = MS_SECOND * 60;
